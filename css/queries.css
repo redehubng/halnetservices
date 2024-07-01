@@ -1,0 +1,14 @@
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .company_partners-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-rows: repeat(5, 1fr); /* Adjust for extra items if needed */
+    }
+}
+
+@media (max-width: 480px) {
+    .company_partners-container {
+        grid-template-columns: 1fr; /* 1 column */
+        grid-template-rows: repeat(9, auto); /* Stack all items */
+    }
+}

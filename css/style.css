@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* Variable Roots */
+:root {
+    /* Black Family */
+    --black-pure: #000000;
+    --black-very-dark: #0B0A14;
+    --black-opaque: #000000E3;
+    --black-semi-opaque: #00000099;
+    --black-charcoal: #21202D;
+
+    /* White Family */
+    --white-pure: #FFFFFF;
+    --white-off: #D9D9D9;
+    --white-cream: #FEF1EB;
+    --white-grayish: #E2E2E9;
+    --white-taupe: #BDBCBC;
+    --white-dusty: #CECDD5;
+    --white-very-light: #F6F6FA;
+    --gray-light: #A7A7A7;
+    --white-light-gray: #E0E0E0;
+    --white-smoke: #F1F1F1;
+    --white-translucent-light: #FFFFFF1A;
+    --white-translucent-medium: #FFFFFFB2;
+    --white-translucent-dark: #FFFFFF66;
+    --white-pinkish-translucent: #F3EBEB1A;
+    --gray-charcoal: #535266;
+    --gray-medium: #878698;
+
+    /* Orange Family */
+    --orange-bright: #F1672C;
+    --orange-dark: #C2410A;
+    --orange-vivid: #FF4A1C;
+
+    /* Blue Family */
+    --blue-bright: #374BFB;
+
+    /* Font Families */
+    --font-sans: "DM Sans", sans-serif;
+    --font-mono: "Space Grotesk", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background-color: var(--white);
+    font-family: var(--font-sans);
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: none;
+}
+
+/* Utilities */
+.container {
+    width: 90% !important;
+    margin: 0 auto !important;
+}
+
+/* button */
+.btn {
+    padding: 10px 24px;
+    border-radius: 2px;
+    font-family: var(--font-mono);
+    font-weight: 500;
+}
+
+.btn_light {
+    background-color: var(--white-very-light);
+    color: var(--gray-charcoal);
+}
+
+.btn_dark {
+    background-color: var(--white-pinkish-translucent);
+    color: var(--white-pure);
+}
+
+.btn_orange {
+    background-color: var(--orange-bright);
+    color: var(--white-pure);
+}
+
+.btn_small {
+    background-color: #FEF1EB;
+    color: var(--orange-bright);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Header and Nav */
+nav,
+header {
+    background-image: url('../assets/Hero-section.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 3rem 0rem;
+}
+
+/* Navigation */
+nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation_list {
+    display: flex;
+    justify-content: space-between;
+    gap: 6.5rem;
+}
+
+
+.navigation_list li a {
+    color: var(--gray-light);
+}
+
+.navigation_list li a:hover {
+    color: var(--white-pure);
+}
+
+
+header {
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    color: var(--white-pure);
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+}
+
+.header_content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 70%;
+}
+
+.header_content-title {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header_content-title h1 {
+    font-size: 56px;
+    font-weight: 500;
+}
+
+.header_content-title p {
+    color: var(--gray-light);
+    line-height: 24px;
+}
+
+.header_btn-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Company Section */
+.company {
+    padding: 5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company_title h1 {
+    font-size: 24px;
+    font-family: var(--font-mono);
+}
+
+.company_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.company_partners-container {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.company_partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border: 1px solid var(--white-dusty);
+}
+
+.top-orange {
+    border-right: 1px solid var(--orange-bright);
+}
+
+.bottom-orange {
+    border-left: 1px solid var(--orange-bright);
+}
+
+.new_partner-title p {
+    font-size: 14px;
+}
+
+.new_partner-title h3 {
+    font-size: 24px;
+}
