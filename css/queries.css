@@ -1,6 +1,6 @@
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-    .navigation {
+    .navigation_container {
         display: none;
     }
 
@@ -173,6 +173,9 @@
     }
 
     /* order form section */
+    .order {
+        padding: 2rem 0rem;
+    }
     .order-form {
         width: 100%;
     }
@@ -221,9 +224,7 @@
 
     .footer-link_container {
         flex-direction: column;
-    }
-
-    .footer_btn {
+        padding-bottom: 24px;
     }
 }
 

@@ -530,7 +530,7 @@ header {
 
 /* Projects Section */
 .projects {
-    padding: 5rem 0rem;
+    padding: 3rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -602,7 +602,7 @@ header {
 
 /* Contact Section */
 .order {
-    padding: 5rem 0rem;
+    padding: 3rem 0rem;
 }
 
 .order-container {
@@ -662,6 +662,7 @@ option {
     padding: 10px;
     border-radius: 3px;
     font-family: inherit;
+    background: transparent;
 }
 
 .form-inputs textarea {
@@ -872,7 +873,6 @@ footer {
     font-weight: 300;
     font-family: var(--font-sans);
 }
-
 
 
 /* KeyFrames */
