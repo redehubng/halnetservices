@@ -1,6 +1,6 @@
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-    .navigation_container {
+    .nav{
         display: none;
     }
 
