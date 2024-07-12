@@ -109,12 +109,11 @@ a {
 /* Header and Nav */
 nav,
 header {
-    background-image: url('../assets/Hero-section.png');
+    background-image: url('../assets/hero-section.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 3rem 0rem;
 }
 
 /* Navigation */
@@ -152,6 +151,8 @@ header {
     display: flex;
     align-items: end;
     color: var(--white-pure);
+    padding: 3rem 0rem;
+
 }
 
 .header_container {
