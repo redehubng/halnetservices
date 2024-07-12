@@ -547,6 +547,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--gray-charcoal);
 }
 
 .projects-title_main {
@@ -867,7 +868,7 @@ footer {
     justify-content: center;
     align-items: center;
     color: var(--black-very-dark);
-    font-style: 12px;
+    font-size: 12px;
     font-weight: 300;
     font-family: var(--font-sans);
 }
