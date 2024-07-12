@@ -54,7 +54,8 @@ body {
     width: 100%;
     height: 100%;
     font-size: 16px;
-    background-color: var(--white);
+    /* background-color: var(--white); */
+    background: blue;
     font-family: var(--font-sans);
 }
 
@@ -193,6 +194,7 @@ header {
 /* Company Section */
 .company {
     padding: 5rem 0rem;
+    background-color: var(--white-pure);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -532,6 +534,7 @@ header {
 /* Projects Section */
 .projects {
     padding: 3rem 0rem;
+    background-color: var(--white-pure);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -604,6 +607,7 @@ header {
 /* Contact Section */
 .order {
     padding: 3rem 0rem;
+    background-color: var(--white-pure);
 }
 
 .order-container {
