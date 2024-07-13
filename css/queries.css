@@ -12,6 +12,11 @@
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
 
+    .active {
+        animation: fade-in-top 1s linear 0s 1 normal none;
+
+    }
+
     .navigation_list {
         gap: 1rem;
     }
