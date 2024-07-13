@@ -54,8 +54,7 @@ body {
     width: 100%;
     height: 100%;
     font-size: 16px;
-    /* background-color: var(--white); */
-    background: blue;
+    background-color: var(--white);
     font-family: var(--font-sans);
 }
 
@@ -176,7 +175,6 @@ header {
     align-items: end;
     color: var(--white-pure);
     padding: 3rem 0rem;
-
 }
 
 .header_container {

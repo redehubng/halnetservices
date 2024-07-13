@@ -4,16 +4,21 @@
         display: none;
         position: absolute;
         top: 100px;
-        left: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.8);
+        width: 90%;
+        border-radius: 5px;
+        background: var(--white-very-light);
         flex-direction: column;
-        align-items: center;
-        padding: 1rem 0;
+        padding: 1rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
 
-    .navigation_list li {
-        margin: 0.5rem 0;
+    .navigation_list {
+        gap: 1rem;
+    }
+
+    .navigation_list li a {
+        color: var(--gray-charcoal);
+        font-weight: 700;
     }
 
     .navigation_button {
