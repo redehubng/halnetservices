@@ -148,10 +148,9 @@ nav {
 /* Mobile Menu Button */
 .navigation_menu_button {
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    background-color: var(--white-very-light);
+    padding: 8px;
+    border-radius: 2px;
     cursor: pointer;
 }
 
