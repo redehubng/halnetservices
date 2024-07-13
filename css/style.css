@@ -146,6 +146,29 @@ nav {
     color: var(--white-pure);
 }
 
+/* Mobile Menu Button */
+.navigation_menu_button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.navigation_menu_button span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: var(--gray-light);
+    border-radius: 3px;
+    transition: background 0.3s;
+}
+
+.navigation_menu_button:hover span {
+    background: var(--white-pure);
+}
+
 
 header {
     height: 100vh;
