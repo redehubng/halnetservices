@@ -1,6 +1,6 @@
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-    nav{
+    nav {
         display: none;
     }
 
@@ -111,6 +111,7 @@
     .feature_main {
         gap: 3rem;
         padding: 4rem 0rem;
+        background: none;
     }
 
     .feature_main-content {
@@ -121,6 +122,10 @@
 
     .feature-title {
         order: 1;
+        background-image: url('../assets/feature-main-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .feature_card {
@@ -176,6 +181,7 @@
     .order {
         padding: 2rem 0rem;
     }
+
     .order-form {
         width: 100%;
     }
@@ -216,7 +222,7 @@
         flex-direction: column;
     }
 
-    .footer-main{
+    .footer-main {
         flex-direction: column;
         padding-bottom: 3rem;
         gap: 24px;
