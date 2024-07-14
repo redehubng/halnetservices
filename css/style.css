@@ -866,6 +866,10 @@ textarea:focus {
     font-weight: 400;
 }
 
+.address-info a {
+    color: var(--white-taupe);
+}
+
 /* footer */
 
 footer {
