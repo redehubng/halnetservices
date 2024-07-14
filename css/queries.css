@@ -166,12 +166,20 @@
         width: 90%;
     }
 
-    .first_card {
-        transform: rotate(0) !important;
+    .first_card.rotated {
+        transform: rotate(0deg) !important;
     }
-
-    .second_card {
-        transform: rotate(-0) !important;
+    
+    .second_card.rotated {
+        transform: rotate(0deg) !important;
+    }
+    
+    .third_card.rotated {
+        transform: rotate(0deg) !important;
+    }
+    
+    .fourth_card.rotated {
+        transform: rotate(0deg) !important;
     }
 
     .feature_extra-content {

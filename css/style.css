@@ -56,6 +56,7 @@ body {
     font-size: 16px;
     background-color: var(--white);
     font-family: var(--font-sans);
+    overflow-x: hidden;
 }
 
 li,
@@ -122,6 +123,13 @@ nav {
     display: flex;
     align-items: center;
 }
+.navigation_logo {
+    width: 210px;
+}
+
+.navigation_logo img{
+    width: 100%;
+}
 
 .navigation_container {
     display: flex;
@@ -169,7 +177,7 @@ nav {
 
 
 header {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: end;
     color: var(--white-pure);
@@ -412,6 +420,7 @@ header {
     flex-direction: column;
     gap: 20px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .feature_card-title {
@@ -434,13 +443,51 @@ header {
 }
 
 .first_card {
-    transform: rotate(-12deg) !important;
-    animation: myAnim 2s ease 0s 1 normal forwards;
+    transition: transform 2s ease;
 }
 
 .second_card {
+    transition: transform 2s ease;
+}
+
+.third_card {
+    transition: transform 2s ease;
+}
+
+.fourth_card {
+    transition: transform 2s ease;
+}
+
+.first_card.rotated {
+    transform: rotate(-12deg) !important;
+}
+
+.second_card.rotated {
     transform: rotate(12deg) !important;
-    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.third_card.rotated {
+    transform: rotate(12deg) !important;
+}
+
+.fourth_card.rotated {
+    transform: rotate(-12deg) !important;
+}
+
+.first_card:hover {
+    transform: rotate(0deg) !important;
+}
+
+.second_card:hover {
+    transform: rotate(0deg) !important;
+}
+
+.third_card:hover {
+    transform: rotate(0deg) !important;
+}
+
+.fourth_card:hover {
+    transform: rotate(0deg) !important;
 }
 
 .feature_card-icon {
