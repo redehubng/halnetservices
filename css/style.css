@@ -727,7 +727,6 @@ header {
 }
 
 .form-inputs input,
-select,
 option {
     width: 50%;
     border: 1px solid var(--white-light-gray);
@@ -737,7 +736,7 @@ option {
     background: transparent;
 }
 
-.form-inputs textarea {
+.form-inputs textarea, select{
     width: 100%;
     border: 1px solid var(--white-light-gray);
     padding: 10px;
