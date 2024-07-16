@@ -169,6 +169,10 @@ nav {
     background: var(--gray-light);
     border-radius: 3px;
     transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    -ms-transition: background 0.3s;
+    -o-transition: background 0.3s;
 }
 
 .navigation_menu_button:hover span {
@@ -684,7 +688,7 @@ header {
 }
 
 .order-form {
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -692,6 +696,10 @@ header {
     border-radius: 5px;
     border: 1px solid var(--white-light-gray);
     animation: scale-up-center 1s linear 0s 1 normal none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .form-title {
