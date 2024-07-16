@@ -40,6 +40,12 @@ function checkCardsInViewport() {
     }
 }
 
+// icon load
+document.getElementById("orderForm").onsubmit = function() {
+    document.querySelector("order_btn").style.display = "none";
+    document.getElementById("loader").style.display = "inline-block";
+  };
+
 window.addEventListener('scroll', checkCardsInViewport);
 window.addEventListener('resize', checkCardsInViewport);
 document.addEventListener('DOMContentLoaded', checkCardsInViewport);

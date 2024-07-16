@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+    
     <!-- Navigation Bar -->
     <nav class="navigation">
         <div class="navigation_container container">
@@ -362,7 +363,7 @@
     <!-- Order Form Section -->
     <section class="order">
         <div class="order-container container">
-            <form action="submit" class="order-form" method="post">
+            <form action="submit.php" id="orderForm" class="order-form" method="post">
                 <div class="form-title">
                     <h1>Request a Quote</h1>
                     <p>Fusce non hendrerit ante. Curabitur in libero neque. Nulla at vestibulum massa. Maecenas tempus,</p>
@@ -386,6 +387,7 @@
                         <textarea rows="7" placeholder="Additional Details"></textarea>
                     </div>
                     <a href="#" class="btn btn_orange order_btn">Submit request</a>
+                    <div class="loader" id="loader"></div>
                 </div>
             </form>
         </div>
