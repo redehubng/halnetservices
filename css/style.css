@@ -169,6 +169,10 @@ nav {
     background: var(--gray-light);
     border-radius: 3px;
     transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    -ms-transition: background 0.3s;
+    -o-transition: background 0.3s;
 }
 
 .navigation_menu_button:hover span {
@@ -684,7 +688,7 @@ header {
 }
 
 .order-form {
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -692,6 +696,10 @@ header {
     border-radius: 5px;
     border: 1px solid var(--white-light-gray);
     animation: scale-up-center 1s linear 0s 1 normal none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .form-title {
@@ -972,6 +980,21 @@ footer {
         transform:scale(1);
     }
 }
+.loader {
+    display: none;
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid var(--orange-bright);
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
 @keyframes comingLeft {
 	0% {
