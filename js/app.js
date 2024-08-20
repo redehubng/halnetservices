@@ -49,3 +49,18 @@ document.getElementById("orderForm").onsubmit = function() {
 window.addEventListener('scroll', checkCardsInViewport);
 window.addEventListener('resize', checkCardsInViewport);
 document.addEventListener('DOMContentLoaded', checkCardsInViewport);
+
+// Back to Top Button
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) { // adjust this value to your header height
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+});
+
+backToTopButton.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});

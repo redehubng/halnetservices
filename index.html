@@ -364,19 +364,19 @@
     <!-- Order Form Section -->
     <section class="order">
         <div class="order-container container">
-            <form action="submit" id="orderForm" class="order-form" method="post">
+            <form action="submit.php" id="orderForm" class="order-form" method="post">
                 <div class="form-title">
                     <h1>Request a Quote</h1>
                     <p>Fusce non hendrerit ante. Curabitur in libero neque. Nulla at vestibulum massa. Maecenas tempus,</p>
                 </div>
                 <div class="form_main">
                     <div class="form-inputs">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Name" name="name">
+                        <input type="email" placeholder="Email" name="email" >
                     </div>
                     <div class="form-inputs">
-                        <input type="tel" placeholder="Phone Number">
-                        <input type="text" placeholder="Company">
+                        <input type="tel" placeholder="Phone Number" name="phone_number">
+                        <input type="text" placeholder="Company" name="company">
                     </div>
                     <div class="form-inputs">
                         <select id="services" name="services">
@@ -385,9 +385,9 @@
                         </select>
                     </div>
                     <div class="form-inputs">
-                        <textarea rows="7" placeholder="Additional Details"></textarea>
+                        <textarea rows="7" placeholder="Additional Details" name="additional_details"></textarea>
                     </div>
-                    <a href="#" class="btn btn_orange order_btn">Submit request</a>
+                    <button type="submit" class="btn btn_orange order_btn" name="submitContact">Submit request</button>
                     <div class="loader" id="loader"></div>
                 </div>
             </form>
@@ -498,6 +498,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" style="display: none;">
+        <span class="material-symbols-outlined">
+            arrow_upward
+        </span>
+    </button>
 </body>
 
 <script src="./js/app.js"></script>
