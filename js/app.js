@@ -1,3 +1,8 @@
+// Loader File
+window.addEventListener('load', function() {
+  document.getElementById('loader').style.display = 'none';
+});
+
 // JavaScript for mobile menu button functionality
 document.addEventListener('DOMContentLoaded', function() {
     const menuButton = document.getElementById('menuButton');

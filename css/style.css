@@ -91,6 +91,40 @@ a {
     border: 2px solid var(--orange-bright);
 }
 
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-spinner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #333;
+    border-top-color: #fff;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* End of utilities */
+
 /* button */
 .btn {
     padding: 10px 24px;
@@ -99,26 +133,51 @@ a {
     border-radius: 2px;
     font-family: var(--font-mono);
     font-weight: 500;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .btn_light {
     background-color: var(--white-very-light);
+    border: 2px solid var(--white-very-light);
     color: var(--gray-charcoal);
+}
+
+.btn_light:hover {
+    background-color: transparent;
+    border: 2px solid var(--orange-bright);
+    color: var(--orange-bright);
 }
 
 .btn_dark {
     background-color: var(--white-pinkish-translucent);
+    border: 2px solid var(--white-pinkish-translucent);
     color: var(--white-pure);
+}
+
+.btn_dark:hover {
+    color: var(--white-pure);
+    border: 2px solid var(--white-pure);
 }
 
 .btn_footer {
     background-color: var(--black-charcoal);
+    border: 2px solid var(--black-charcoal);
     color: var(--white-pure);
+}
+
+.btn_footer:hover {
+    background: transparent;
+    color: var(--black-charcoal);
 }
 
 .btn_orange {
     background-color: var(--orange-bright);
     color: var(--white-pure);
+}
+
+.btn_orange:hover {
+    background-color: #FEF1EB;
+    color: var(--orange-bright);
 }
 
 .btn_small {

@@ -37,6 +37,10 @@
         display: flex;
     }
 
+    .navigation_list li a:hover {
+        color: var(--orange-bright);
+    }
+
     .btn {
         padding: 16px 24px;
         border-radius: 2px;
@@ -169,15 +173,15 @@
     .first_card.rotated {
         transform: rotate(0deg) !important;
     }
-    
+
     .second_card.rotated {
         transform: rotate(0deg) !important;
     }
-    
+
     .third_card.rotated {
         transform: rotate(0deg) !important;
     }
-    
+
     .fourth_card.rotated {
         transform: rotate(0deg) !important;
     }
